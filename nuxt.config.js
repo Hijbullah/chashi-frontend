@@ -22,9 +22,15 @@ export default {
         ]
     },
 
-    css: [],
+    css: [
+        'vue-slick-carousel/dist/vue-slick-carousel.css',
+        'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+    ],
 
-    plugins: [],
+    plugins: [
+        '~/plugins/vue-slick-carousel.js',
+        '~/plugins/vue-carousel.client.js'
+    ],
 
     components: true,
 
