@@ -1,14 +1,8 @@
 <template>
     <div>
+        <h2 class="text-center font-semibold text-2xl">Home page</h2>
         <section>
-            <home-carousel />
+            <SliderCategory />
         </section>
-       
     </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>

@@ -1,26 +1,33 @@
 <template>
-  <div class="carousel-wrapper">
-    <VueSlickCarousel v-bind="slickOptions">
-      <div v-for="i in 5" :key="i" class="flex space-x-3">
-        <img class="w-full h-full" src="~/assets/images/carousel-1.jpeg" />
-      </div>
-    </VueSlickCarousel>
-  </div>
+    <div class="carousel-wrapper h-52 overflow-hidden">
+        <VueSlickCarousel v-bind="slickOptions">
+            <div v-for="i in 5" :key="i">
+                <!-- <div class="h-52">
+                    slide
+                </div> -->
+                <a href="https://www.google.com">
+                    <img class="w-full h-full select-none" src="~/assets/images/carousel-1.jpeg" />
+                </a>
+            </div>
+        </VueSlickCarousel>
+    </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      slickOptions: {
-        slidesToShow: 3,
-        arrows: true,
-        dots: true,
-        // infinite: false,
-        centerMode: true,
-      }
+    data() {
+        return {
+            slickOptions: {
+                accessibility: false,
+                dots: true,
+                edgeFriction: 0.35,
+                infinite: false,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
     }
-  }
 }
 </script>
 

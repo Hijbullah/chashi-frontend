@@ -24,12 +24,11 @@ export default {
 
     css: [
         'vue-slick-carousel/dist/vue-slick-carousel.css',
-        'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+        'vue-slick-carousel/dist/vue-slick-carousel-theme.css',
     ],
 
     plugins: [
         '~/plugins/vue-slick-carousel.js',
-        '~/plugins/vue-carousel.client.js'
     ],
 
     components: true,
