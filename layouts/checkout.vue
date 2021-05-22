@@ -1,11 +1,8 @@
 <template>
     <div class="min-h-screen antialiased font-sans text-gray-800">
-        <BaseHeader />
-
-        <main class="px-8 py-5">
+        
+        <main class="max-w-screen-md mx-auto">
             <Nuxt />
         </main>
-        
-        <BaseFooter />
     </div>
 </template>

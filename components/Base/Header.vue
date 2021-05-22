@@ -1,6 +1,6 @@
 <template>
-    <header>
-        <div class="flex items-center px-8 py-3 shadow-md">
+    <header class="sticky top-0">
+        <div class="flex items-center px-8 py-3 bg-white shadow-md">
             <div>
                 <h1 class="text-3xl text-teal-500 font-bold">Chashi</h1>
             </div>
