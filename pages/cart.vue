@@ -1,11 +1,13 @@
 <template>
     <div class="h-screen flex flex-col">
         <div class="pt-3 flex justify-between items-center">
-            <button>
+            <!-- <button>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
                 </svg>
-            </button>
+            </button> -->
+            <ButtonBack />
+            
             <div class="flex items-center space-x-2">
                 <h2 class="font-bold text-3xl text-teal-500 tracking-wider">Chashi</h2>
                 <span class="text-xl text-gray-600">|</span>

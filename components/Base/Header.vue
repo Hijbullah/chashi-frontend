@@ -1,5 +1,5 @@
 <template>
-    <header class="sticky top-0">
+    <header class="sticky top-0 z-50">
         <div class="flex items-center px-8 py-3 bg-white shadow-md">
             <div>
                 <h1 class="text-3xl text-teal-500 font-bold">Chashi</h1>
