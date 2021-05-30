@@ -1,22 +1,52 @@
 <template>
     <div>
-        <section>
-            <h2 class="mb-4 text-teal-500 text-xl font-bold uppercase">Categories</h2>
-            <div class="grid grid-cols-10 gap-x-3 gap-y-4">
-                <a v-for="(category, index) in categories" :key="index" href="#">
-                    <div class="flex flex-col items-center border border-gray-300 rounded overflow-hidden shadow hover:border-teal-500">
-                        <div class="h-20">
-                            <img class="h-full w-full object-cover object-center" :src="category.image" alt="">
-                        </div>
-                        <h4 class="py-2">{{ category.name }}</h4>
+       
+        <HomeBanner />
+
+         <section>
+            <div class="flex items-center space-x-4">
+                <div class="w-1/5 px-4 py-4 flex items-center space-x-4 border border-gray-100 rounded shadow-sm">
+                    <div class="h-10 w-10 flex items-center justify-center bg-gray-100 text-gray-900 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg>
                     </div>
-                </a>
+                    <div>
+                        <p class="text-xs text-gray-500">My Vouchers</p>
+                        <p class="mt-1 text-sm font-bold">0 Vouchers</p>
+                    </div>
+                </div>
+                <div class="w-1/5 px-4 py-4 flex items-center space-x-4 border border-gray-100 rounded shadow-sm">
+                    <div class="h-10 w-10 flex items-center justify-center bg-gray-100 text-teal-500 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500">Share With Frends & Family</p>
+                        <p class="mt-1 text-sm text-teal-500 font-bold">Get Voucher</p>
+                    </div>
+                </div>
+                <div class="w-1/5 px-4 py-4 flex items-center space-x-4 border border-gray-100 rounded shadow-sm">
+                    <div class="h-10 w-10 flex items-center justify-center bg-gray-100 text-teal-500 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500">My Community</p>
+                        <p class="mt-1 text-sm text-teal-500 font-bold">0 products</p>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <HomeCategory />
+    
+
         <section>
             <home-section class="mt-8">
-                <template #title>Featured Products</template>
+                <template #title>Top Picks for You</template>
                 <div class="grid grid-cols-6 gap-x-4 gap-y-5">
                     <div class="group rounded-md overflow-hidden transition transition-shadow hover:shadow-lg">
                         <div class="h-52">
@@ -73,79 +103,3 @@
         </section>
     </div>
 </template>
-
-<script>
-
-export default {
-    data() {
-        return {
-             categories: [
-                {
-                    name: 'Harvest',
-                    image: '/images/img1.jpeg'
-                },
-                {
-                    name: 'Fruits',
-                    image: '/images/img2.jpeg'
-                },
-                {
-                    name: 'Vegetables',
-                    image: '/images/img3.jpeg'
-                },
-                {
-                    name: 'Organic',
-                    image: '/images/img4.jpeg'
-                },
-                {
-                    name: 'Harvest',
-                    image: '/images/img1.jpeg'
-                },
-                {
-                    name: 'Fruits',
-                    image: '/images/img2.jpeg'
-                },
-                {
-                    name: 'Vegetables',
-                    image: '/images/img3.jpeg'
-                },
-                {
-                    name: 'Organic',
-                    image: '/images/img4.jpeg'
-                },
-                {
-                    name: 'Harvest',
-                    image: '/images/img1.jpeg'
-                },
-                {
-                    name: 'Fruits',
-                    image: '/images/img2.jpeg'
-                },
-                {
-                    name: 'Vegetables',
-                    image: '/images/img3.jpeg'
-                },
-                {
-                    name: 'Organic',
-                    image: '/images/img4.jpeg'
-                },
-                {
-                    name: 'Harvest',
-                    image: '/images/img1.jpeg'
-                },
-                {
-                    name: 'Fruits',
-                    image: '/images/img2.jpeg'
-                },
-                {
-                    name: 'Vegetables',
-                    image: '/images/img3.jpeg'
-                },
-                {
-                    name: 'Organic',
-                    image: '/images/img4.jpeg'
-                },
-            ]
-        }
-    }
-}
-</script>

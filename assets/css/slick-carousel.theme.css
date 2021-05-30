@@ -1,0 +1,22 @@
+.slick-slide{
+    padding: 0 6px;
+}
+/* .slick-slide:first-child{
+   padding-left: 0;
+}
+.slick-slide:last-child{
+   padding-right: 0;
+} */
+/* .slick-dots {
+    position: absolute;
+    right: 36px;
+    bottom: 10px;
+    width: auto;
+}
+.slick-dots li {
+    margin: 0 4px;
+} */
+
+.slick-next.slick-disabled, .slick-prev.slick-disabled {
+    opacity: 0 !important;
+}

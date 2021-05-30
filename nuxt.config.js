@@ -24,7 +24,7 @@ export default {
 
     css: [
         'vue-slick-carousel/dist/vue-slick-carousel.css',
-        'vue-slick-carousel/dist/vue-slick-carousel-theme.css',
+        '~/assets/css/slick-carousel.theme.css',
     ],
 
     plugins: [
