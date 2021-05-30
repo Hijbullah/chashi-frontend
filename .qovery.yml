@@ -1,0 +1,11 @@
+---
+application:
+  name: "chashi-frontend"
+  project: "chashi"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-chashi-frontend"
+  routes:
+  - application_name: "chashi-frontend"
+    paths:
+    - "/*"
