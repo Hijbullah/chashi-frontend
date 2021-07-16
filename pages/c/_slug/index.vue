@@ -1,23 +1,23 @@
 <template>
     <div>
-        <div class="mb-3 flex justify-between items-center">
+        <div class="mt-4 flex justify-between items-center">
             <div>
-                <h4 class="text-2xl font-bold tracking-wide leading-snug">Organic</h4>
-                <p class="text-sm text-gray-600">Showing 24 products</p>
+                <h4 class="text-3xl font-bold tracking-wide leading-snug">Organic</h4>
+                <p class="text-xs text-gray-500">Showing 24 products</p>
             </div>
             <div class="flex items-center">
-                <p>Short By:</p>
-                <div>
-                    short bar
+                <p class="text-sm font-bold text-gray-500">Sort:</p>
+                <div class="ml-4">
+                   <ProductSortDropdown />
                 </div>
             </div>
         </div>
-        <div class="py-8 bg-gray-300 flex justify-center items-center">
-            category bar
-        </div>
-        <div>
-            
-        </div>
+
+        <SliderCategory />
+
+        <product-template>
+            <ProductSingle v-for="i in 100" :key="i" />
+        </product-template>
     </div>
 </template>
 

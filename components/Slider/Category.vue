@@ -1,47 +1,96 @@
 <template>
-    <VueSlickCarousel v-bind="settings">
-        <slot></slot>
- 
-        <template #prevArrow>
-            <button class="absolute top-1/2 -left-2 transform -translate-y-1/2 inline-flex items-center p-2 bg-white text-teal-500 border border-gray-200 rounded-full shadow-2xl transition-opacity duration-700 z-10 focus:outline-none">
-                <!-- {{ arrowOption.currentSlide }}/{{ arrowOption.slideCount }} -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg>
-            </button>
-        </template>
-
-        <template #nextArrow>
-            <!-- {{ arrowOption }} -->
-            <button class="absolute top-1/2 -right-2 transform -translate-y-1/2 inline-flex items-center p-2 bg-white text-teal-500 border border-gray-200 rounded-full shadow-2xl transition-opacity duration-700 z-10 focus:outline-none">
-                <!-- {{ arrowOption.currentSlide }}/{{ arrowOption.slideCount }} -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </button>
-        </template>
-      
-        <template #customPaging="page">
-            <div class="custom-dot">
-                {{ page }}
-            </div>
-        </template>
-    </VueSlickCarousel>
+    <section class="mt-8 mb-10">
+        <slider-template :settings="settings">
+            <NuxtLink :to="`/c/${category.name}`" v-for="(category, index) in categories" :key="index" href="#">
+                <div class="pb-2 flex flex-col items-center justify-center border border-gray-300 rounded overflow-hidden shadow hover:border-teal-500">
+                    <div class="relative h-14">
+                        <img class="h-full w-full object-cover object-center" :src="category.image" alt="">
+                    </div>
+                    <h4 class="overflow-hidden h-10 px-1 pt-2 pb-2 text-xs">{{ category.name }}</h4>
+                </div>
+            </NuxtLink>
+        </slider-template>
+    </section>
 </template>
 
 <script>
 export default {
     data() {
         return {
+            categories: [
+                {
+                    name: 'Harvest',
+                    image: '/images/1.jpeg'
+                },
+                {
+                    name: 'Fruits',
+                    image: '/images/2.jpeg'
+                },
+                {
+                    name: 'Vegetables and i dont know',
+                    image: '/images/3.jpeg'
+                },
+                {
+                    name: 'Organic',
+                    image: '/images/4.jpeg'
+                },
+                {
+                    name: 'Harvest',
+                    image: '/images/5.jpeg'
+                },
+                {
+                    name: 'Fruits',
+                    image: '/images/6.jpeg'
+                },
+                {
+                    name: 'Vegetables',
+                    image: '/images/7.jpeg'
+                },
+                {
+                    name: 'Organic',
+                    image: '/images/3.jpeg'
+                },
+                {
+                    name: 'Harvest',
+                    image: '/images/1.jpeg'
+                },
+                {
+                    name: 'Fruits',
+                    image: '/images/2.jpeg'
+                },
+                {
+                    name: 'Vegetables',
+                    image: '/images/3.jpeg'
+                },
+                {
+                    name: 'Organic',
+                    image: '/images/4.jpeg'
+                },
+                {
+                    name: 'Harvest',
+                    image: '/images/1.jpeg'
+                },
+                {
+                    name: 'Fruits',
+                    image: '/images/5.jpeg'
+                },
+                {
+                    name: 'Vegetables',
+                    image: '/images/6.jpeg'
+                },
+                {
+                    name: 'Organic',
+                    image: '/images/7.jpeg'
+                },
+            ],
             settings: {
                 accessibility: false,
                 arrow: true,
                 dots: false,
                 infinite: false,
-                slidesToShow: 10,
+                slidesToShow: 12,
                 slidesToScroll: 1,
-                swipeToSlide: true,
-                // variableWidth: true,
+                swipeToSlide: true
             }
         }
     }

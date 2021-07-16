@@ -14,7 +14,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+                sans: ['Work Sans', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 teal: colors.teal,
@@ -25,6 +25,7 @@ module.exports = {
         extend: {},
     },
     plugins: [
+        require('@tailwindcss/line-clamp'),
         require('@tailwindcss/aspect-ratio'),
     ],
 }
