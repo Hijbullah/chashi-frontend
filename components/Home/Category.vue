@@ -22,67 +22,67 @@
                 categories: [
                     {
                         name: 'Harvest',
-                        image: '/images/img1.jpeg'
+                        image: '/images/1.jpeg'
                     },
                     {
                         name: 'Fruits',
-                        image: '/images/img2.jpeg'
+                        image: '/images/2.jpeg'
                     },
                     {
                         name: 'Vegetables and i dont know',
-                        image: '/images/img3.jpeg'
+                        image: '/images/3.jpeg'
                     },
                     {
                         name: 'Organic',
-                        image: '/images/img4.jpeg'
+                        image: '/images/4.jpeg'
                     },
                     {
                         name: 'Harvest',
-                        image: '/images/img1.jpeg'
+                        image: '/images/5.jpeg'
                     },
                     {
                         name: 'Fruits',
-                        image: '/images/img2.jpeg'
+                        image: '/images/6.jpeg'
                     },
                     {
                         name: 'Vegetables',
-                        image: '/images/img3.jpeg'
+                        image: '/images/7.jpeg'
                     },
                     {
                         name: 'Organic',
-                        image: '/images/img4.jpeg'
+                        image: '/images/3.jpeg'
                     },
                     {
                         name: 'Harvest',
-                        image: '/images/img1.jpeg'
+                        image: '/images/1.jpeg'
                     },
                     {
                         name: 'Fruits',
-                        image: '/images/img2.jpeg'
+                        image: '/images/2.jpeg'
                     },
                     {
                         name: 'Vegetables',
-                        image: '/images/img3.jpeg'
+                        image: '/images/3.jpeg'
                     },
                     {
                         name: 'Organic',
-                        image: '/images/img4.jpeg'
+                        image: '/images/4.jpeg'
                     },
                     {
                         name: 'Harvest',
-                        image: '/images/img1.jpeg'
+                        image: '/images/1.jpeg'
                     },
                     {
                         name: 'Fruits',
-                        image: '/images/img2.jpeg'
+                        image: '/images/5.jpeg'
                     },
                     {
                         name: 'Vegetables',
-                        image: '/images/img3.jpeg'
+                        image: '/images/6.jpeg'
                     },
                     {
                         name: 'Organic',
-                        image: '/images/img4.jpeg'
+                        image: '/images/7.jpeg'
                     },
                 ]
             }

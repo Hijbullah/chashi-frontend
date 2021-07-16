@@ -42,9 +42,13 @@
         </section>
 
         <HomeCategory />
+        
+        <product-template>
+            <ProductSingle />
+        </product-template>
     
 
-        <section>
+        <!-- <section>
             <home-section class="mt-8">
                 <template #title>Top Picks for You</template>
                 <div class="grid grid-cols-6 gap-x-4 gap-y-5">
@@ -100,6 +104,6 @@
                     </div>
                 </div>
             </home-section>
-        </section>
+        </section> -->
     </div>
 </template>
